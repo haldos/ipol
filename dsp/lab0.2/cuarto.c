@@ -12,7 +12,7 @@ int main(){
     // 2.- investigar tamaño de la estructura con sizeof:
     int tamano_persona;
     tamano_persona = sizeof(persona);
-    printf("Tamaño estructura persona: %d.\n",tamano_persona);
+    printf("Tamaño estructura persona: %d bytes.\n",tamano_persona);
     
     // prueba:
     persona p1;
@@ -28,7 +28,7 @@ int main(){
     } estudiante;
     int tamano_estudiante;
     tamano_estudiante = sizeof(estudiante);
-    printf("Tamaño estructura estudiante: %d.\n",tamano_estudiante);
+    printf("Tamaño estructura estudiante: %d bytes.\n",tamano_estudiante);
     
     // 4.- definir esturctura estudiante2, orden: peso, sexo, edad, nota:
     typedef struct {
@@ -39,6 +39,6 @@ int main(){
     } estudiante2;
     int tamano_estudiante2;
     tamano_estudiante2 = sizeof(estudiante2);
-    printf("Tamaño estructura estudiante2: %d.\n",tamano_estudiante2);
+    printf("Tamaño estructura estudiante2: %d bytes.\n",tamano_estudiante2);
     
 }

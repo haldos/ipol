@@ -10,7 +10,7 @@ int main(){
     int *pi = ai;
     
     int i;
-    printf("Address\t\tValue\tSize\n");
+    printf("Address\t\tValue\tSize (bytes)\n");
     for(i=0;i<10;i++){
         printf("%p\t%d\t%d\n",pi,*pi,sizeof(*pi));
         pi++;
