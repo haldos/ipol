@@ -26,6 +26,7 @@ int main(){
         char sexo;
         char nota;
     } estudiante;
+    estudiante e1;
     int tamano_estudiante;
     tamano_estudiante = sizeof(estudiante);
     printf("Tamaño estructura estudiante: %d bytes.\n",tamano_estudiante);
@@ -37,6 +38,7 @@ int main(){
         int edad;
         char nota;
     } estudiante2;
+    estudiante2 e2;
     int tamano_estudiante2;
     tamano_estudiante2 = sizeof(estudiante2);
     printf("Tamaño estructura estudiante2: %d bytes.\n",tamano_estudiante2);
