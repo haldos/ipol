@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include "genera_señales.h"
-
-#define SIGNAL_LENGTH 10
+#include "genera_señales.h" // Ya incluye al fir.h.
 
 void print_signal(sample_t *signal){
     sample_t *pf = signal;
