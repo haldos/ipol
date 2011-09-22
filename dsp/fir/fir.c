@@ -3,7 +3,7 @@
 sample_t a[TAP_LENGTH]; // Coeficientes del filtro.
 sample_t buff_in[TAP_LENGTH]; //Entrada al filtro, del mismo tamaño que a[].
 int p; // Puntero a una muestra, siempre apunta a la ultima muestra 
-           // ingresada (circular).
+       // ingresada (circular).
 
 void ini_fir(sample_t coefs[]){
     int index;
