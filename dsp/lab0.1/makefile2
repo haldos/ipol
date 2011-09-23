@@ -1,0 +1,11 @@
+#!/bin/bash
+
+quinto : quinto.o auxiliares.o
+	gcc auxiliares.o quinto.o -o quinto
+
+quinto.o: quinto.c
+	gcc -c quinto.c
+
+auxiliares.o: quinto.c
+	gcc -c auxiliares.c
+	

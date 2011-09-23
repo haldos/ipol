@@ -1,0 +1,12 @@
+#!/bin/bash
+
+OBJ=quinto.o auxiliares.o
+
+quinto : $(OBJ)
+	gcc $(OBJ) -o $@
+
+%.o: %.c
+	gcc -c $^
+
+
+	
