@@ -4,7 +4,7 @@ quinto : quinto.o auxiliares.o
 	gcc auxiliares.o quinto.o -o $@
 
 quinto.o: quinto.c
-	gcc -c quinto.c
+	gcc -c $^
 
 auxiliares.o: quinto.c
 	gcc -c $^
