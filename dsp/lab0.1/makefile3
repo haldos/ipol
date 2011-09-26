@@ -6,6 +6,6 @@ quinto : quinto.o auxiliares.o
 quinto.o: quinto.c
 	gcc -c $^
 
-auxiliares.o: quinto.c
+auxiliares.o: auxiliares.c
 	gcc -c $^
 	
