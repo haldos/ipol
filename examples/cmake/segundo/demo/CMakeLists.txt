@@ -1,10 +1,8 @@
-project(demo)
+PROJECT(DemoABC)
 
-cmake_minimum_required(VERSION 2.6)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 
-
-#this part of the project generates the library
-
-add_executable(demo demo.c)
+SET(SRC demo.c)
+ADD_EXECUTABLE(demo ${SRC})
 
 
