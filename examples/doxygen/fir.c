@@ -1,3 +1,5 @@
+// fir.c
+
 #include "fir.h"
 
 sample_t a[TAP_LENGTH]; // Coeficientes del filtro.

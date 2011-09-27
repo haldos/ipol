@@ -1,5 +1,7 @@
+// test_fir.c
+
 #include <stdio.h>
-#include "genera_señales.h" // Ya incluye al fir.h.
+#include "genera_senales.h" // Ya incluye al fir.h.
 
 void print_signal(sample_t *signal){
     sample_t *pf = signal;

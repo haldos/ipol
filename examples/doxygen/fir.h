@@ -1,3 +1,5 @@
+// fir.h
+
 #define TAP_LENGTH 4 // Cantidad de coeficientes del filtro.
 #define SIGNAL_LENGTH 10 // Cantidad de muestras;
 
