@@ -1,5 +1,10 @@
-test_fir : fir.o genera_señales.o test_fir.o
-	gcc -g -c fir.c
-	gcc -g -c genera_señales.c
-	gcc -g -c test_fir.c
-	gcc -g fir.o genera_señales.o test_fir.o -o test_fir
+#!/bin/bash
+
+OBJ = fir.o genera_señales.o test_fir.o
+
+
+test_fir : $(OBJ)
+	gcc $(OBJ) -o $@
+
+%.o: %.c
+	gcc -c $^
