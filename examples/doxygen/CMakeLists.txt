@@ -2,3 +2,12 @@ PROJECT(TestFIR)
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 
+SET(LIBSRC_FIR fir.c fir.h)
+SET(LIBSRC_GEN genera_senales.c genera_senales.h)
+ADD_LIBRARY(fir SHARED ${LIBSRC_FIR})
+ADD_LIBRARY(gen SHARED ${LIBSRC_GEN})
+
+SET(LIBS fir gen)
+SET(SRC test_fir.c)
+ADD_EXECUTABLE(test_fir ${SRC})
+TARGET_LINK_LIBRARIES(test_fir ${LIBS})
