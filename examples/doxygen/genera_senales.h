@@ -7,7 +7,7 @@
 
 #include "fir.h"
 
-/**
+/** \fn step(sample_t *signal,int length,int t_up,sample_t amp)
  * \brief Genera una señal de tipo escalón.
  * \param *signal Puntero a un array de elementos de tipo sample_t,
  * donde se guardará la señal generada.
@@ -19,7 +19,7 @@
 */
 void step(sample_t *signal,int length,int t_up,sample_t amp);
 
-/**
+/** \fn impulse(sample_t *signal,int length)
  * \brief Genera una señal de tipo impulso.
  * \param *signal Puntero a un array de elementos de tipo sample_t,
  * donde se guardará la señal generada.

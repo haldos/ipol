@@ -1,8 +1,20 @@
 // test_fir.c
 
-#include <stdio.h>
-#include "genera_senales.h" // Ya incluye al fir.h.
+/** @file
+ * \brief Función para probar el módulo FIR implementado. Se crea una señal de
+ * entrada, utilizando las funciones implementadas en \p genera_senales, y se
+ * utiliza las funciones implementadas en \p fir para filtrar la señal. 
+*/
 
+#include <stdio.h>
+#include "genera_senales.h"
+
+/** \fn print_signal(sample_t *signal)
+ * \brief Imprime en la salida estándar la señal de entrada.
+ * \param *signal Puntero a un array de elementos de tipo sample_t, donde se
+ * guarda la señal a imprimir.
+ * @return No tiene salida.
+*/
 void print_signal(sample_t *signal){
     sample_t *pf = signal;
     int index;
@@ -13,13 +25,18 @@ void print_signal(sample_t *signal){
     printf("\n");
 }
 
+/** \fn main()
+ * \brief Prueba de los módulos implementados.
+ * @return No tiene salida.
+*/
 int main(){
     
-    // Señales de entrada y salida:
+    /// Señal de entrada.
     sample_t entrada[SIGNAL_LENGTH];
+    /// Señal de salida.
     sample_t salida[SIGNAL_LENGTH];
     
-    // Coeficientes del FIR:
+    /// Coeficientes del FIR.
     sample_t coefs[TAP_LENGTH];
         coefs[0] = 0.25;
         coefs[1] = 0.25;
