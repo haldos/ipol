@@ -28,4 +28,6 @@ int main(){
         printf("Valor del elemento: %d.\n",actual->valor);
         actual = actual->next;
     }
+    
+    return 0;
 }

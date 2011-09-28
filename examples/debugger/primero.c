@@ -23,4 +23,6 @@ int main(){
     /// Puntero a un struct
     persona *pp1;
     pp1 = &p1;
+    
+    return 0;
 }
