@@ -1,0 +1,6 @@
+WARNS="-Wconversion -Wunreachable-code"
+WARNS="-Wno-unused -Wall -Wextra -Wno-deprecated-declarations -Werror -Wshadow -pedantic-errors   -Wimplicit -Wimplicit-function-declaration -Wimplicit-int -Wmissing-declarations -Wmissing-prototypes -Wold-style-definition -Wstrict-prototypes -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wredundant-decls -Wnested-externs -Wuninitialized -O"
+
+c99 $WARNS -DI_CAN_HAS_LINUX -DIIO_SHOW_DEBUG_MESSAGESx -D_GNU_SOURCE -Wno-unused -Wno-cast-qual -g  -c iio.c
+c99 -Wno-unused -g iio_test.c iio.o -ljpeg -ltiff -lpng  -o iio_test
+#c99 -Wno-unused -g iio_test_named.c iio.o -ljpeg -ltiff -lpng  -o iio_test_named
