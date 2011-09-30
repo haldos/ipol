@@ -10,12 +10,7 @@ int main(int c, char *v[]){
         int w, h, pixeldim;
         float *x = iio_read_image_float_vec(v[2], &w, &h, &pixeldim);
         fprintf(stderr, "Got a %dx%d image with %d channels\n", w, h, pixeldim);
-
         int th = atoi(v[1]);
-        printf("w = %d\n",w);
-        printf("h = %d\n",h);
-        printf("pixeldim = %d\n",pixeldim);
-        printf("th = %d\n",th);
         
         int i;
         for( i=0 ; i<w*h*pixeldim ; i++ ){
