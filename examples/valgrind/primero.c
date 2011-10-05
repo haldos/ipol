@@ -1,22 +1,19 @@
-// tercero.c
-
 #include <stdio.h>
+#include <stdlib.h>
 
-/** @file
- * \brief Tercer ejemplo de programa para introducir el uso del debugger (ddd).
- */
-
-#define TAM 10
-
-int main(){
-    int arreglo[TAM];
-    int veinte = 20;
+int main(int argc, char** argv){
     
-    int i;
-    for(i=0;i<=TAM+1;i++){
-        arreglo[i] = i;
-    }
-    
-    printf("veinte -> %d.\n",veinte);
-    printf("i -> %d.\n",i);
+  int i;
+  int *a = malloc(sizeof(int) * 10);
+  
+  if (!a) return -1; /*malloc failed*/
+  
+  for (i = 0; i < 11; i++){
+    a[i] = i;
+  }
+  
+  free(a);
+  
+  return 0;
+  
 }
