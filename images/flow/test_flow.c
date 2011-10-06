@@ -23,8 +23,8 @@ int main(int argc, char *argv[]){
         int i,j;
         for(i=0;i<w;i++){
             for(j=0;j<h;j++){
-                u[w*j+i] = 200;
-                v[w*j+i] = -100;
+                u[w*j+i] = (float)6*(i-w/2)/w;
+                v[w*j+i] = (float)-4*(j-h/2)/h;
             }
         }
 
