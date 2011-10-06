@@ -7,3 +7,6 @@ set(CMAKE_C_FLAGS "-g -std=c99")
 SET(SRC test_flow.c iio.c iio.h)
 ADD_EXECUTABLE(test_flow ${SRC})
 TARGET_LINK_LIBRARIES(test_flow jpeg tiff png)
+
+EXECUTE_PROCESS(COMMAND tar -czvf test_flow.tar.gz CMakeLists.txt ${SRC})
+EXECUTE_PROCESS(COMMAND zip test_flow.zip CMakeLists.txt ${SRC})
