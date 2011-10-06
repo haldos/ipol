@@ -10,6 +10,6 @@ TARGET_LINK_LIBRARIES(test_flow jpeg tiff png)
 
 IF (UNIX)
     SET(OTHER_FILES CMakeLists.txt a.png b.png flow flow.png viewflow)
-    EXECUTE_PROCESS(COMMAND tar -czvf test_flow.tar.gz ${OTHER_FILES} ${SRC})
-    EXECUTE_PROCESS(COMMAND zip test_flow.zip ${OTHER_FILES} ${SRC})
+    EXECUTE_PROCESS(COMMAND tar -czvf test_flow.tar.gz ${OTHER_FILES} ${SRC} OUTPUT_QUIET)
+    EXECUTE_PROCESS(COMMAND zip test_flow.zip ${OTHER_FILES} ${SRC} OUTPUT_QUIET)
 ENDIF (UNIX)
