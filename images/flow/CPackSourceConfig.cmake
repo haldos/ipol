@@ -74,7 +74,7 @@ SET(CPACK_RESOURCE_FILE_WELCOME "/usr/share/cmake-2.8/Templates/CPack.GenericWel
 SET(CPACK_SET_DESTDIR "OFF")
 SET(CPACK_SOURCE_CYGWIN "")
 SET(CPACK_SOURCE_GENERATOR "TGZ")
-SET(CPACK_SOURCE_IGNORE_FILES "/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp$;\\.#;/#")
+SET(CPACK_SOURCE_IGNORE_FILES "/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp$;\\.#;/#;*.png;*.html")
 SET(CPACK_SOURCE_INSTALLED_DIRECTORIES "/home/haldo/Documentos/Investigacion/IPOL/ipol.git/images/flow;/")
 SET(CPACK_SOURCE_OUTPUT_CONFIG_FILE "/home/haldo/Documentos/Investigacion/IPOL/ipol.git/images/flow/CPackSourceConfig.cmake")
 SET(CPACK_SOURCE_PACKAGE_FILE_NAME "test_flow-0.1.1-Source")
