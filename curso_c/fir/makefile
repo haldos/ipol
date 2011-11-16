@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OBJ = fir.o genera_señales.o test_fir.o
+OBJ = fir.o genera_senales.o test_fir.o
 
 
 test_fir : $(OBJ)
