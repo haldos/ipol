@@ -1,18 +1,16 @@
-// tercero.c
-
 #include <stdio.h>
+#include <stdlib.h>
 
-#define TAM 10
+int main(int argc, char** argv){
+    
+  int i;
+  int *a;
 
-int main(){
-    int arreglo[TAM];
-    int veinte = 20;
-    
-    int i;
-    for(i=0;i<=TAM+1;i++){
-        arreglo[i] = i;
-    }
-    
-    printf("veinte -> %d.\n",veinte);
-    printf("i -> %d.\n",i);
+  for (i=0; i < 10; i++){
+    a = malloc(sizeof(int) * 100);
+  }
+  
+  free(a);
+  
+  return 0;
 }
