@@ -4,7 +4,11 @@ OBJ = fir.o genera_senales.o test_fir.o
 
 
 test_fir : $(OBJ)
-	gcc $(OBJ) -o $@
+	gcc -g $(OBJ) -o $@
 
 %.o: %.c
-	gcc -c $^
+	gcc -c -g $^
+
+clean:
+	rm -f *.o test_fir
+
