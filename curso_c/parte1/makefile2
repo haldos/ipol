@@ -4,8 +4,8 @@ quinto : quinto.o auxiliares.o
 	gcc auxiliares.o quinto.o -o quinto
 
 quinto.o: quinto.c
-	gcc -c quinto.c
+	gcc -c -g quinto.c
 
 auxiliares.o: auxiliares.c
-	gcc -c auxiliares.c
+	gcc -c -g auxiliares.c
 	

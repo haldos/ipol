@@ -1,5 +1,7 @@
 #include "heap.h"
-#include <malloc.h>
+#include <stdlib.h>
+#include <stdio.h>
+
 
 #define PARENT(i) (i-1)/2
 #define RIGHT(i) (i-1)/2
