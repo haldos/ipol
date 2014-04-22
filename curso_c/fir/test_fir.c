@@ -10,6 +10,7 @@ void print_signal(sample_t *signal){
     }
     printf("\n");
 }
+#define DEBUG 0
 
 int main(){
     
@@ -38,7 +39,8 @@ int main(){
     for(i=0;i<SIGNAL_LENGTH;i++){
         salida[i] = fir(entrada[i]);
     }
-    
+#if DEBUG    
     printf("Salida: \n");
     print_signal(salida);
+#endif
 }
