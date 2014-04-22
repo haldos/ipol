@@ -1,2 +1,8 @@
 @build
 nbproject
+*.o
+callgrind.*
+CMakeCache.txt
+CMakeFiles
+*.cmake
+*.swp
