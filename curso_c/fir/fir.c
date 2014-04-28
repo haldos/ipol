@@ -30,7 +30,6 @@ sample_t fir(sample_t muestra){
     sample_t muestra_out = 0;
     for(i=0;i<TAP_LENGTH;i++){
         muestra_out = muestra_out + a[TAP_LENGTH-i-1]*buff_in[p];
-        muestra_out=powf(muestra_out,2);
 		  update_p(1);
     }
     update_p(1);
