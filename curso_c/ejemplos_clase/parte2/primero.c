@@ -20,11 +20,11 @@ int main()
 	printf("POR VALOR:\n");
 	printf("---------------\n");
 	printf("Antes de intercambiar: a = %d.\n",a);
-   int b1 = por2a(a);
+	int b1 = por2a(a);
  
 	printf("Después de intercambiar: a = %d y b1 = %d.\n",a,b1);
 	printf("\n");
-   int b2 = por2b(&a);
+	int b2 = por2b(&a);
 
 	printf("POR REFERENCIA:\n");
 	printf("----------\n");
