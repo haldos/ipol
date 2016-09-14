@@ -8,8 +8,9 @@ int main(int argc, char** argv){
 
   if (!a) return -1; /*malloc failed*/
 
-  for (i = 0; i < 11; i++){
-    a[i] = i;
+int c;
+  for (i = 0; i < 10; i++){
+    c=a[i];
   }
 
   free(a);

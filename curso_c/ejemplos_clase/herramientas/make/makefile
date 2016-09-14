@@ -1,3 +1,5 @@
+all: prog.exe
+
 prog.exe: a.o b.o c.o demo.o
 	gcc a.o b.o c.o demo.o -o prog.exe 
 
@@ -12,3 +14,6 @@ c.o: c.c
 
 demo.o: demo.c
 	gcc -c demo.c -o demo.o	
+
+clean:
+	rm -f *.o prog.exe

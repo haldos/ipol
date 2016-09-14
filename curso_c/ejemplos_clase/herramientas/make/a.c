@@ -1,2 +1,3 @@
 
-void a_fun(){}
+void a_fun()
+{}

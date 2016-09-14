@@ -20,10 +20,10 @@ int main()
 {
     /// Puntero a un struct
     persona *p1=crear_persona("Juan",'M',300);
-
+printf("1\n");
 	 //uso mediante puntero
 	 int edad=p1->edad;
-	 //printf("edad: %d\n",edad);
+	 printf("edad: %d\n",edad);
 
     return 0;
 }
