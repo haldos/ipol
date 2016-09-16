@@ -14,7 +14,7 @@ typedef struct
 persona* crear_persona(char* name, char sexo, int edad);
 
 /** @file
- * \brief Primer ejemplo de programa para introducir el uso del debugger (ddd).
+ * \brief Ejemplo para detectar un segmentation fault con un debugger (ddd).
  */
 int main()
 {
