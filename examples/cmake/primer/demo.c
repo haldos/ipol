@@ -5,6 +5,6 @@ int main()
     a_fun();
     b_fun();
     c_fun();
-	printf("hola");
+    printf("hola");
     return 0;
 }
