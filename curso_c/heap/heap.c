@@ -33,7 +33,7 @@ void heap_addItem(HEAP* h, ITEM* it)
 		heap_moveUp(h,h->n++);
 }
 
-void heap_free(HEAP* h)
+void heap_delete(HEAP* h)
 {
 	h->n_max=0;
 	h->n=0;
