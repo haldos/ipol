@@ -48,7 +48,7 @@ int main()
 		printf("%d\t%.2f\n",res->label,res->v);
 	}
 	*/
-	heap_free(&heap);
+	heap_delete(&heap);
 	printf("</heaptest>\n");
 	return 0;
 }
