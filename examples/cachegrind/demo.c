@@ -66,9 +66,12 @@ int main()
 	ObjectOrientedType* objArray	= ObjectOrientedType_init(N);
 	DataOrientedType* 	dataArray 	= DataOrientedType_init(N);
 
-	double d_av=Data_average(dataArray,N);
-	double o_av=Object_average(objArray,N);
-
-	printf("D average: %g\n",d_av/RAND_MAX);
-	printf("O average: %g\n",o_av/RAND_MAX);
+	int R=100;
+	for(int i=0;i<R;i++)
+	{
+		double d_av=Data_average(dataArray,N);
+		double o_av=Object_average(objArray,N);
+		printf("D average: %g\n",d_av/RAND_MAX);
+		printf("O average: %g\n",o_av/RAND_MAX);
+	}
 }
