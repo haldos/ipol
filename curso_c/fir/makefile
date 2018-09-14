@@ -7,7 +7,7 @@ test_fir : $(OBJ)
 	gcc -g $(OBJ) -o $@
 
 %.o: %.c
-	gcc -c -g $^
+	gcc -Ofast -fPIC -c -g $^
 
 clean:
 	rm -f *.o test_fir

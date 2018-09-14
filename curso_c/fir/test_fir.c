@@ -30,14 +30,17 @@ int main(){
     // Coeficientes del FIR:
     sample_t coefs[TAP_LENGTH];
 	 init_array(coefs, TAP_LENGTH, 1.0/TAP_LENGTH); 
+#if DEBUG   
     print_signal(coefs,TAP_LENGTH);
+#endif
 	 // Inicializo entrada:
     step(entrada,SIGNAL_LENGTH,SIGNAL_LENGTH/2,1);
     //impulse(entrada,SIGNAL_LENGTH);
+#if DEBUG
     printf("Entrada: \n");
     print_signal(entrada,SIGNAL_LENGTH);
     //print_signal(entrada);
-    
+#endif    
     // Inicializo FIR:
     ini_fir(coefs);
     
